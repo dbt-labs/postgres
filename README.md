@@ -4,7 +4,7 @@
 
 
 ## Macros
-#### index ([source](macros/sql/index.sql))
+#### index ([source](macros/index.sql))
 This macro creates an index on a given column.
 
 Usage:
