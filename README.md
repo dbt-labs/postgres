@@ -4,5 +4,16 @@
 
 
 ## Macros
+#### index ([source](macros/sql/index.sql))
+This macro creates an index on a given column.
 
-None.... yet
+Usage:
+```
+{{
+config({
+    "post-hook": [
+      "{{ index(this, 'id')}};",
+    ],
+    })
+}}
+...
