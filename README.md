@@ -4,7 +4,8 @@
 
 
 ## Macros
-#### index ([source](macros/index.sql))
+
+#### index ([source](macros/optimizers/index.sql))
 This macro creates an index on a given column.
 
 Usage:
@@ -12,7 +13,7 @@ Usage:
 {{
 config({
     "post-hook": [
-      "{{ index(this, 'id')}};",
+      "{{ postgres.index(this, 'id')}}",
     ],
     })
 }}
